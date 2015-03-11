@@ -1,3 +1,11 @@
+# Fork Info #
+
+This is a fork of cargo adding a 'debianize' command. Only after putting this
+prototype together, I figured cargo is actually extensible. This fork is likely
+to vanish and a proper implementation should probably be a separate project.
+
+# Cargo original README #
+
 Cargo downloads your Rust project’s dependencies and compiles your project.
 
 Learn more at http://doc.crates.io/.
