@@ -23,6 +23,9 @@ extern crate url;
 
 extern crate registry;
 
+#[cfg(feature = "debian")]
+extern crate debian;
+
 use std::env;
 use std::error::Error;
 use std::old_io::stdio::{stdout_raw, stderr_raw};

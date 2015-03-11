@@ -1,4 +1,5 @@
 pub use self::cargo_clean::{clean, CleanOptions};
+#[cfg(feature = "debian")] pub use self::cargo_debianize::{debianize, DebianizeOptions};
 pub use self::cargo_compile::{compile, compile_pkg, CompileOptions};
 pub use self::cargo_read_manifest::{read_manifest,read_package,read_packages};
 pub use self::cargo_rustc::{compile_targets, Compilation, Layout, Kind, rustc_version};
@@ -25,6 +26,7 @@ pub use self::resolve::{resolve_pkg, resolve_with_previous};
 
 mod cargo_clean;
 mod cargo_compile;
+#[cfg(feature = "debian")] mod cargo_debianize;
 mod cargo_doc;
 mod cargo_fetch;
 mod cargo_generate_lockfile;

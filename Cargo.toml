@@ -39,6 +39,13 @@ dependencies = { winapi = "0.1", advapi32-sys = "*" }
 tempdir = "0.3"
 hamcrest = { git = "https://github.com/carllerche/hamcrest-rust.git" }
 
+[features]
+debianize = ["debian"]
+
+[dependencies.debian]
+optional = true
+path = "../rust-debian"
+
 [[bin]]
 name = "cargo"
 test = false
